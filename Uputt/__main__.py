@@ -11,7 +11,7 @@ from Uputt.helpers.misc import create_botlog, heroku
 BOT_VER = "2.0.0"
 CMD_HANDLER = ["." "?" "!" "*"]
 MSG_ON = """
-〆 **Uputt-Pyrobot Di Aktifkan** 〆
+〆 **Tikus-Userbot Di Aktifkan** 〆
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ㋱ **Userbot Version -** `{}`
 ㋱ **Ketik** `{}alive` **untuk Mengecek Bot**
@@ -23,7 +23,7 @@ async def main():
     await app.start()
     print("LOG: Founded Bot token Booting..")
     for all_module in ALL_MODULES:
-        importlib.import_module("Uputt.modules" + all_module)
+        importlib.import_module("Tikus.modules" + all_module)
         print(f"Successfully Imported {all_module} ")
     for bot in bots:
         try:
@@ -45,7 +45,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("Uputt").info("Uputt-Pyrobot Telah Aktif Ya Kontol🐣")
+    LOGGER("Tikus").info("Tikus-Userbot Udah Aktif Ya Pler🐷")
     install()
     heroku()
     LOOP.run_until_complete(main())
