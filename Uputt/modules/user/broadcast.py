@@ -44,7 +44,7 @@ async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Limit Jangan salahin Gua Ya Anjing, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Pesannya Mana Tolol**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -76,7 +76,7 @@ async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Limit Jangan Salahin Gua Ya Anjing, Started global broadcast...`")
     else:
-        return await message.edit_text("**Pesannya Mana ngentod**")
+        return await message.edit_text("**Pesannya Mana Tolol**")
     done = 0
     error = 0
     async for dialog in client.get_dialogs():
@@ -115,7 +115,7 @@ async def blchatgcast(client: Client, message: Message):
         await edit_or_reply(message, "🔮 **Blacklist GCAST:** `Disabled`")
 
 
-@Client.on_message(filters.command("addblacklist", cmd) & filters.me)
+@Client.on_message(filters.command("addbl", cmd) & filters.me)
 async def addblacklist(client: Client, message: Message):
     Man = await edit_or_reply(message, "`Processing...`")
     if HAPP is None:
@@ -143,7 +143,7 @@ async def addblacklist(client: Client, message: Message):
     restart()
 
 
-@Client.on_message(filters.command("delblacklist", cmd) & filters.me)
+@Client.on_message(filters.command("delbl", cmd) & filters.me)
 async def delblacklist(client: Client, message: Message):
     Man = await edit_or_reply(message, "`Processing...`")
     if HAPP is None:
@@ -183,11 +183,11 @@ add_command_help(
             "Untuk Mengecek informasi daftar blacklist gcast.",
         ],
         [
-            "addblacklist",
+            "addbl",
             "Untuk Menambahkan grup tersebut ke blacklist gcast.",
         ],
         [
-            "delblacklist",
+            "delbl",
             f"Untuk Menghapus grup tersebut dari blacklist gcast.\n\n  •  **Note : **Ketik perintah** `{cmd}addblacklist` **dan** `{cmd}delblacklist` **di grup yang kamu Blacklist.",
         ],
     ],
