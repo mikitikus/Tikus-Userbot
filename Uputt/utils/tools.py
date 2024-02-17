@@ -16,15 +16,8 @@ from typing import Tuple
 from PIL import Image, ImageDraw, ImageFont
 
 absen = [
-    "**Hadir bang** 😁",
-    "**Hadir kak** 😉",
-    "**Hadir dong** 😁",
-    "**Hadir ganteng** 🥵",
-    "**Hadir bro** 😎",
-    "**Sok2²an Absen Si Kontoolll**"
-    "**Sipaling Absen Anjengg**"
-    "**Hadir kak maap telat** 🥺",
-]
+    "**Iya Kenapa Gantenggg** 😣"
+    ]
 
 
 async def get_readable_time(seconds: int) -> str:
