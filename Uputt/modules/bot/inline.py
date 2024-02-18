@@ -96,11 +96,12 @@ async def pingme(client: Client, message: Message):
 
 async def peler_function(message: Message, answers):
     msg = (
-        f"TIKUS-USERBOT \n"
-        "ㅤㅤStatus : Ubot Aktif🐣 \n"
-        f"ㅤㅤㅤㅤModules:</b> <code>{len(modules)} Modules</code> \n"
-        f"ㅤㅤㅤㅤBot Version: {BOT_VER} \n"
-        f"ㅤㅤㅤㅤBranch: {branch} \n\n"
+        f"𝚃𝙸𝙺𝚄𝚂-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 \n"
+        "ㅤㅤStatus : Aktif \n"
+        f"ㅤㅤModules:</b> <code>{len(modules)} Modules</code> \n"
+        f"ㅤㅤBot Version: {BOT_VER} \n"
+        f"ㅤㅤPython Version:</b> <code>{pyver.split()[0]}</code> \n"
+        f"ㅤㅤPyrogram Version :</b> <code>{pyrover}</code> \n"
     )
     answers.append(
         InlineQueryResultArticle(
