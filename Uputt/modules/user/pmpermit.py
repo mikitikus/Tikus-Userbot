@@ -304,8 +304,8 @@ async def gtpmprmt(client: Client, cust_msg: Message):
         )
 
 
-@Client.on_message(filters.command("rtpprt", cmd) & filters.me)
-async def gtpmprmt(client: Client, cust_msg: Message):
+@Client.on_message(filters.command("resetpmpermit", cmd) & filters.me)
+async def rstpmprmt(client: Client, cust_msg: Message):
     if gvarstatus("PMPERMIT") and gvarstatus("PMPERMIT") == "false":
         return await cust_msg.edit(
             f"**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `{cmd}setvar PM_AUTO_BAN True`"
