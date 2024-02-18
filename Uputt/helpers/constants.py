@@ -10,19 +10,19 @@
 class First:
     ALIVE = "`Still Working On Fire 🔥`"
     REPO = """
-**Hey**, __I am using__ ✨ **𝚄𝙿𝚄𝚃𝚃-𝙿𝚈𝚁𝙾𝙱𝙾𝚃** ✨
+**Hey**, __I am using__ ✨ ** 𝚃𝙸𝙺𝚄𝚂-𝚄𝚂𝙴𝚁𝙱𝙾𝚃** ✨
 
 ✣ **Userbot Version :** `{}`
 ✣ **Group Support :** [UputtSupport](t.me/uputtsupport)
-✣ **Channel Uputt :** [Amneseey0u](t.me/amneseey0u)
-✣ **Owner Repo :** [Uputt](t.me/iamuput)
+✣ **Channel Tikus :** [Side](t.me/junkthings)
+✣ **Owner Repo :** [Miki](t.me/Mikitod)
 ✣ **Repo :** [Uputt-Pyrobot](https://github.com/iamuput/Uputt-Pyrobot)
 
 
 Powered by [Uputt-Pyrobot](https://github.com/iamuput/Uputt-Pyrobot)"""
     CREATOR = 'I was created by my master <a href="https://github.com/iamuput/Uputt-Pyrobot">Man</a> on a rainy day.'
     MSG_ON = """
-🐣 **Uputt-Pyrobot Berhasil Di Aktifkan** 🐣
+🐣 **Tikus-Userbot Berhasil Di Aktifkan** 🐣
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
