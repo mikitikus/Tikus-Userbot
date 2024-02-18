@@ -20,14 +20,11 @@ from config import OWNER_ID as owner
 @app.on_callback_query()
 def pmowner(client, callback_query):
     user_id = owner
-    message = "Lu Siapa Anjeng!!!!"
+    message = "Apesih Monyet!!!!"
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 logouputt = [
-    "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg",
-    "https://telegra.ph/file/17770ad693a43ebeb0fb6.jpg",
-    "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg",
     "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg"
 ]
 
@@ -37,11 +34,11 @@ alive_logo = random.choice(logouputt)
 async def start(app, message):
     chat_id = message.chat.id
     file_id = alive_logo
-    caption = "Hi, Saya Asisstant Uputt-Pyrobot\nTidak Ada Yang Special Kecuali Indomie."
+    caption = "Hi, Saya Asisstant Tikus-Userbot\nTidak Ada Yang Special Kecuali Nenen Gede."
     reply_markup = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("Support", url="https://t.me/UputtSupport"),
-            InlineKeyboardButton("Channel", url="https://t.me/amneseey0u"),
+            InlineKeyboardButton("Channel", url="https://t.me/junkthings"),
         ],
     ])
 
