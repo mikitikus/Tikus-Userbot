@@ -128,10 +128,10 @@ async def create_botlog(client):
     LOGGER("Uputt").info(
         "TUNGGU SEBENTAR SAYANG. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK KAMU"
     )
-    desc = "Group Log untuk Uputt-Pyrobot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @amneseey0u @iamuput 🐣"
+    desc = "Group Log untuk Tikus-Userbot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\nPowered By ~ @junkthings @Mikitod 🐣"
     try:
-        photo = "Uputt/resources/logo.jpg"
-        gruplog = await client.create_supergroup("Uputt-Pyrobot Logs", desc)
+        photo = "https://telegra.ph//file/5cb0e3dad80b79a32e7eb.jpg"
+        gruplog = await client.create_supergroup("Tikus-Userbot Logs", desc)
         fine = gruplog.id
         await client.set_chat_photo(fine, photo=photo)
         if await in_heroku():
