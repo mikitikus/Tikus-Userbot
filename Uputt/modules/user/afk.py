@@ -25,7 +25,7 @@ AFK_RESTIRECT = {}
 DELAY_TIME = 3  # seconds
 
 
-@Client.on_message(filters.me & filters.command("aefka", cmd))
+@Client.on_message(filters.me & filters.command("afk", cmd))
 async def afk(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         set_afk(True, message.text.split(None, 1)[1])
@@ -131,3 +131,14 @@ async def no_longer_afk(client: Client, message: Message):
         except BaseException:
             pass
         MENTIONED = []
+
+
+add_command_help(
+    "afk",
+    [
+        [
+            "afk <alasan>",
+            "Memberi tahu orang yang menandai atau membalas salah satu pesan atau dm anda kalau anda sedang afk",
+        ],
+    ],
+)
