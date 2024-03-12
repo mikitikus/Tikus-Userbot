@@ -132,7 +132,7 @@ async def addblacklist(client: Client, message: Message):
         .replace("set() ", "")
     )
     await message.edit(
-        f"**Berhasil Menambahkan** `{message.chat.id}` **ke daftar blacklist gcast.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+        f"**Berhasil Menambahkan** `{message.chat.id}` **ke daftar blacklist gcast.**\n\nSabar bentar ya njink."
     )
     if await in_heroku():
         heroku_var = HAPP.config()
@@ -154,7 +154,7 @@ async def delblacklist(client: Client, message: Message):
     if gett in blchat:
         blacklistgrup = blchat.replace(gett, "")
         await message.edit(
-            f"**Berhasil Menghapus** `{message.chat.id}` **dari daftar blacklist gcast.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+            f"**Berhasil Menghapus** `{message.chat.id}` **dari daftar blacklist gcast.**\n\nSabar bentar ya njink."
         )
         if await in_heroku():
             heroku_var = HAPP.config()
